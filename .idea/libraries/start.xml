@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="start">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/ext-4.2.1.883/docs/guides/keyboard_nav/start.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

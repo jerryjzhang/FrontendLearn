@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="geekflicks">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/ext-4.2.1.883/docs/guides/editable_grid/geekflicks.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

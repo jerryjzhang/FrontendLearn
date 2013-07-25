@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="direct_grid_pt2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/ext-4.2.1.883/docs/guides/direct_grid_pt2/start.zip!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/ext-4.2.1.883/docs/guides/direct_grid_pt2/reference-files.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
