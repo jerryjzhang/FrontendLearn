@@ -47,7 +47,7 @@ public class RequestController {
 		for(Request req : requestDao.findAll()){
 			requests.add(req);
 		}
-		//add comment 2
+		//add comment
         return requests;
     }
 	
