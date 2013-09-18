@@ -17,7 +17,7 @@
 
 	<!-- Processes application requests -->
 	<servlet>
-		<servlet-name>SpringMvcJunz</servlet-name>
+		<servlet-name>ExtJsLearn</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<!-- It is not mandatory to specify the context file. Instead, I let the 
 		     the spring use default name <servlet-name>-servlet.xml
@@ -30,17 +30,26 @@
 	</servlet>
 		
 	<servlet-mapping>
-		<servlet-name>SpringMvcJunz</servlet-name>
+		<servlet-name>ExtJsLearn</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
 	<!-- html file should be served statically without going through servlet -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>	
+		<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+	</servlet-mapping>	
+		<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.css</url-pattern>
 	</servlet-mapping>
 	
 	<welcome-file-list>
-   		<welcome-file>index.html</welcome-file>
+   		<welcome-file>AlcazarFailure/welcome.html</welcome-file>
   	</welcome-file-list>
 
 </web-app>
