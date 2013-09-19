@@ -1,10 +1,10 @@
 Ext.Loader.setConfig({enabled:true});
 
 Ext.application({
-    name: 'AlcazarFailure',
-    appFolder: "AlcazarFailure/app",
+    name: 'ExtjsProject',
+    appFolder: "ExtjsProject/app",
     controllers: ['Failures', 'Form', 'FailureDetails'],
-    //requires: ['AlcazarFailure.view.RequestHistoryGrid'],
+    //requires: ['ExtjsProject.view.RequestHistoryGrid'],
     launch: function() {
 //	   Ext.create('ms.ext.ux.Header', {
 //		    application: 'Alcazar Refresh Failures Tracker',

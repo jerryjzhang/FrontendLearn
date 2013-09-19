@@ -1,9 +1,9 @@
-Ext.define('AlcazarFailure.view.FailuresGrid', {
+Ext.define('ExtjsProject.view.RequestHistoryGrid', {
     extend: 'Ext.grid.Panel',
-    id: "failuresGrid",
-    alias: 'widget.failuresGrid',
+    //id: "requestHistoryGrid",
+    alias: 'widget.requestHistoryGrid',
     autoscroll: true,
-    store: 'Failures',
+    store: 'RequestHistory',
     rowEditor: Ext.create('Ext.grid.plugin.RowEditing', {
         clicksToEdit: 2
     }),
@@ -18,7 +18,7 @@ Ext.define('AlcazarFailure.view.FailuresGrid', {
             flex: 1
         }, {
             header: 'Date Time',
-            dataIndex: 'errorDatetime',
+            dataIndex: 'updateDatetime',
             flex: 1
         }, {
             header: 'Source Database',
@@ -29,32 +29,12 @@ Ext.define('AlcazarFailure.view.FailuresGrid', {
             dataIndex: 'targetDbName',
             flex: 1
         }, {
-            header: 'Step',
-            dataIndex: 'step',
+            header: 'Status',
+            dataIndex: 'status',
             flex: 1
         }, {
             header: 'Refresh Source',
             dataIndex: 'refreshSource',
-            flex: 1
-        },{
-            header: 'Error Type',
-            dataIndex: 'reason',
-            flex: 1
-        }, {
-            header: 'Root Cause',
-            dataIndex: 'rootCause',
-            flex: 1
-        }, {
-            header: 'Final Solution',
-            dataIndex: 'finalSolution',
-            flex: 1
-        }, {
-            header: '#Bug/Enhancement',
-            dataIndex: 'fixNumber',
-            flex: 1
-        }, {
-            header: 'Error Message',
-            dataIndex: 'errorMessage',
             flex: 1
         }];
         this.plugins = [ this.rowEditor ];

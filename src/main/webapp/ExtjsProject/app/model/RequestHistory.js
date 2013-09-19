@@ -1,4 +1,4 @@
-Ext.define('AlcazarFailure.model.RequestHistory', {
+Ext.define('ExtjsProject.model.RequestHistory', {
     extend: 'Ext.data.Model',
     fields: [
         {

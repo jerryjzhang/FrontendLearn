@@ -1,4 +1,4 @@
-Ext.define("AlcazarFailure.controller.Form", {
+Ext.define("ExtjsProject.controller.Form", {
     extend: 'Ext.app.Controller',
     views: ['Form','FailuresGrid'],
     init: function () {

@@ -1,4 +1,4 @@
-Ext.define('AlcazarFailure.view.Form', {
+Ext.define('ExtjsProject.view.Form', {
     extend: 'Ext.form.Panel',
     id: "movies_form",
     alias: 'widget.moviesform',

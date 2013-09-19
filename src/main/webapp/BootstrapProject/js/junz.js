@@ -1,15 +1,4 @@
 $(document).ready(function(){
-/*  $("#junzBtn").click(function(){
-    $("input").val("hehe");
-  });
-
-  $(".btn").dblclick(function(){
-    $("#junzBtn").fadeToggle();
-  });
-
-  $( "#textFirstName" ).change(function() {
-  alert($(this).val());
-  });*/
   $("#logonBtn").click(function(){
 	  var tbl = $("#userTbl");
     var startDate = $('#startDateTxt').val();
@@ -40,11 +29,13 @@ function loadFailureTable(url, tbl){
 	    tbl.find('td').remove();
 	    $.each(json_data, function(index, item){
 	    	var tr = $('<tr>');
+        /*tr.append('<td data-value=' + item.name + ' >' + item.name + '</td>');*/
 	    	$('<td>').html(item.name).appendTo(tr);
 	    	$('<td>').html(item.errorDatetime).appendTo(tr);
 	    	$('<td>').html(item.sourceDbName).appendTo(tr);
         $('<td>').html(item.targetDbName).appendTo(tr);
 	      tbody.append(tr);
+        $.bootstrapSortable(true);
 	    });
   });	
 }

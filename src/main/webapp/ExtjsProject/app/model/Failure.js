@@ -1,4 +1,4 @@
-Ext.define('AlcazarFailure.model.Failure', {
+Ext.define('ExtjsProject.model.Failure', {
     extend: 'Ext.data.Model',
     fields: [
         {

@@ -1,6 +1,6 @@
-Ext.define('AlcazarFailure.store.Failures', {
+Ext.define('ExtjsProject.store.RequestHistory', {
     extend: 'Ext.data.Store',
-    model: 'AlcazarFailure.model.Failure',
+    model: 'ExtjsProject.model.RequestHistory',
 //    autoLoad: true,
 //    proxy: {
 //        type: 'ajax',
