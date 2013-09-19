@@ -18,6 +18,13 @@ $(document).ready(function(){
   $('#endDatePicker').datepicker().on('changeDate', function(ev){
   	$(this).datepicker('hide');  
   });
+
+  var preFocusTr;
+  $("#userTbl tbody tr").live('click', function(event){
+    if(preFocusTr)preFocusTr.css('background-color', 'white');
+    preFocusTr = $(this);
+    $(this).css('background-color', 'yellow');
+  });
 });
 
 function loadFailureTable(url, tbl){
