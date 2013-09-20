@@ -41,14 +41,33 @@ public class FailureController {
         
         RefreshFailure r1 = new RefreshFailure();
         r1.setName("fake2");
-        r1.setErrorDatetime("2013-06-21");
+        r1.setErrorDatetime("2013-06-23");
         r1.setSourceDbName("NYP_ALZ1.QC_ETL");
-        r1.setTargetDbName("NYT_ALZ.QC_ETL");
+        r1.setTargetDbName("NYT_ALZ1.QC_ETL");
         r1.setStep("COPY_DATA");
         r1.setReason("New Error");
         r1.setErrorMessage("dddddddddddddddddddddddddddddddd");
         r1.setId(2);
         failures.add(r1);
+        
+        for(int i = 3; i < 9; ++i){
+        	failures.add(fakeRefreshFailure(i));
+        }
+    }
+    
+    private static RefreshFailure fakeRefreshFailure(int id){
+    	RefreshFailure r = new RefreshFailure();
+        r.setName("fake" + id);
+        r.setErrorDatetime("2013-06-21");
+        r.setSourceDbName("NYP_ALZ.QC_ETL" + id);
+        r.setTargetDbName("NYT_ALZ.QC_ETL" + id);
+        r.setStep("COPY_DATA");
+        r.setReason("New Error");
+        r.setRootCause("rootCause");
+        r.setFixNumber("TDMS-3049");
+        r.setId(id);
+        
+        return r;
     }
 
     @RequestMapping(value = "/get/all", method = RequestMethod.GET)
