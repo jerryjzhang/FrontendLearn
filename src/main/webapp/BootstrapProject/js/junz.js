@@ -3,6 +3,8 @@ $(document).ready(function(){
   var map;
   var page;
   var pageSize = 5;
+  
+ /* $('#requestNameLb').prop("readonly",true);*/
 
   $("#preBtn").click(function(){
     var tbl = $("#userTbl");
@@ -88,6 +90,7 @@ function loadTable(tbl, map, page, pageSize){
     $('<td>').html(item.errorDatetime).appendTo(tr);
     $('<td>').html(item.sourceDbName).appendTo(tr);
     $('<td>').html(item.targetDbName).appendTo(tr);
+    $('<td>').html(item.step).appendTo(tr);
     tbody.append(tr);
     $.bootstrapSortable(true);
     //Do something

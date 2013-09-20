@@ -57,7 +57,7 @@ public class FailureController {
     
     private static RefreshFailure fakeRefreshFailure(int id){
     	RefreshFailure r = new RefreshFailure();
-        r.setName("fake" + id);
+        r.setName("fakedddddddddddddddddddd" + id);
         r.setErrorDatetime("2013-06-21");
         r.setSourceDbName("NYP_ALZ.QC_ETL" + id);
         r.setTargetDbName("NYT_ALZ.QC_ETL" + id);
